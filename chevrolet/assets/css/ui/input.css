@@ -7,7 +7,7 @@
     width: 100%;
     margin: 10px 0;
     outline: none;
-    border: solid 1px var(--с-ligth-gray);
+    border: solid 1px var(--c-ligth-gray);
     padding: 20px 15px;
     border-radius: 3px;
     box-sizing: border-box;
@@ -18,7 +18,7 @@
     font-weight: 400;
 }
 .input input::placeholder {
-    color: var(--с-ligth-gray);
+    color: var(--c-ligth-gray);
 }
 .input input:focus-visible {
     border: solid 1px var(--c-main);
@@ -38,7 +38,7 @@ textarea {
     width: 100%;
     margin: 10px 0;
     outline: none;
-    border: solid 1px var(--border-input);
+    border: solid 1px var(--c-ligth-gray);
     padding: 10px 15px;
     border-radius: 3px;
     box-sizing: border-box;

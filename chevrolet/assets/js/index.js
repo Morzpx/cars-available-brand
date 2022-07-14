@@ -29,22 +29,15 @@ let styles = {
 };
 
 let disable = () => {
-    body.classList.add('no-scroll');
     Object.keys(styles).forEach(key => {
         body.style[key] = styles[key];
     })
 }
 
 let enable = () => {
-    body.classList.remove('no-scroll');
     Object.keys(styles).forEach(key => {
         body.style.removeProperty(key);
     })
 }
-
-let isDisabled = () => {
-    return body.classList.contains('no-scroll');
-}
-
 
 /*no scroll*/
