@@ -112,7 +112,6 @@ body.--is-visible .burger {
     font-weight: 600;
     line-height: 1em;
     margin-bottom: 1em;
-    text-transform: uppercase;
 }
 .form-container__sub {
     font-size: 22px;
