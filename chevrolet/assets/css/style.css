@@ -187,6 +187,33 @@ body.--is-visible .burger {
 }
 /*footer*/
 
+/*remodal*/
+
+.modal-container {}
+.modal-container .title {}
+.modal-container .sub {
+    margin-bottom: 2em;
+}
+.modal-form {}
+.modal-form .button {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.modal-form__item {
+    margin-bottom: 1em;
+}
+.modal-form__item input {
+    padding: 15px 15px;
+}
+.modal-form__item .checkbox input {
+    padding: .5em;
+}
+.modal-form__item .input_title {}
+.modal-form__item .input_title sup {
+    color: var(--c-main);
+}
+/*remodal*/
+
 @media (max-width: 1024px) {
     .footer-container__head {
         display: block;

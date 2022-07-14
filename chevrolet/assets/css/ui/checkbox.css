@@ -12,9 +12,9 @@
     appearance: none;
     width: auto;
 }
-.checkbox:not(.disabled):hover input:not(:checked), .radio:not(.disabled):hover input:not(:checked) {
-    border: 1px solid var(--c-main);
-}
+/*.checkbox:not(.disabled):hover input:not(:checked), .radio:not(.disabled):hover input:not(:checked) {
+    border: 2px solid var(--c-main);
+}*/
 .checkbox input, .radio input {
     margin: 0px;
     outline: none;
@@ -26,7 +26,7 @@
     border-radius: 5px;
     width: var(--icon-size);
     height: var(--icon-size);
-    border: 1px solid var(--c-gray);
+    border: 2px solid var(--c-gray);
     background: white;
     position: relative;
     top: 0px;
@@ -52,6 +52,7 @@
 }
 .checkbox span, .radio span {
     --padding-left: 10px;
+    font-size: 14px;
     padding-left: var(--padding-left);
     box-sizing: border-box;
     position: relative;
