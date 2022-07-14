@@ -1,0 +1,86 @@
+.checkbox, .radio {
+    display: grid;
+    grid-template-columns: var(--icon-size) 1fr;
+    --icon-size: 20px;
+    --color: blue;
+    display: inline-flex;
+    cursor: pointer;
+    line-height: 1em;
+    position: relative;
+    align-items: flex-start;
+    align-content: center;
+    appearance: none;
+    width: auto;
+}
+/*.checkbox:not(.disabled):hover input:not(:checked), .radio:not(.disabled):hover input:not(:checked) {
+    border: 2px solid var(--c-main);
+}*/
+.checkbox input, .radio input {
+    margin: 0px;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border: 2px solid var(--c-gray);
+    background: white;
+    position: relative;
+    top: 0px;
+}
+.checkbox input:checked, .radio input:checked {
+    border: 2px solid var(--c-main);
+    background: var(--c-main);
+}
+.checkbox input:checked::before, .radio input:checked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: calc(var(--icon-size) / 2);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg  fill='%23fff' viewBox='0 -46 417.81333 417'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m159.988281 318.582031c-3.988281 4.011719-9.429687 6.25-15.082031 6.25s-11.09375-2.238281-15.082031-6.25l-120.449219-120.46875c-12.5-12.5-12.5-32.769531 0-45.246093l15.082031-15.085938c12.503907-12.5 32.75-12.5 45.25 0l75.199219 75.203125 203.199219-203.203125c12.503906-12.5 32.769531-12.5 45.25 0l15.082031 15.085938c12.5 12.5 12.5 32.765624 0 45.246093zm0 0'/%3E%3C/svg%3E");
+}
+.checkbox input:checked + span, .radio input:checked + span {
+    font-weight: 400;
+}
+.checkbox span, .radio span {
+    --padding-left: 10px;
+    font-size: 14px;
+    padding-left: var(--padding-left);
+    box-sizing: border-box;
+    position: relative;
+    top: 2px;
+}
+.checkbox.disabled, .radio.disabled {
+    --color: #bdbdbd;
+    cursor: default;
+}
+.checkbox.disabled span, .radio.disabled span {
+    color: var(--color);
+}
+.checkbox.disabled span *, .radio.disabled span * {
+    color: var(--color) !important;
+}
+.checkbox.disabled input, .radio.disabled input {
+    background-color: var(--с-ligth-gray);
+    cursor: default;
+}
+.radio input {
+    border-radius: 50%;
+}
+.radio input::before {
+    display: none;
+}
+.radio input:checked {
+    box-shadow: inset 0px 0px 0px 4px #fff, inset 0px 0px 0px 10px var(--c-main);
+}
+.checkbox a {
+    transition: inherit;
+}
