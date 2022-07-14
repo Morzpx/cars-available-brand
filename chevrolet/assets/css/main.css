@@ -1,0 +1,77 @@
+@import "../fonts/font.css";
+@import "ui/dropdown.css";
+@import "ui/input.css";
+@import "ui/checkbox.css";
+@import "ui/button.css";
+@import "style.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --container-min-width: 320px;
+    --container-max-width: 1300px;
+    --container-margin: 0px auto;
+    --container-padding: 0 1em;
+    --c-main: #F1B923;
+    --c-hover: #f1b923ba;
+    --c-gray: #DEDEDC;
+    --c-darkgray: #5C5D5E;
+    --c-orange: orange;
+    --c-ligth-gray: #9BA1A5;
+    --c-black: #000;
+    --с-white: #fff;
+    --bg-main: #F2F2F2;
+    --b-radius: 3px;
+    --h1: 35px;
+    --h2: 25px;
+    --h3: 20px;
+    --h4: 17px;
+}
+.--b-radius {border-radius: var(--b-radius)}
+.--bg-main {background: var(--bg-main);}
+
+body {
+    font-family: 'Louis', Helvetica, sans-serif;
+    font-size: 16px;
+}
+.container {
+    max-width: var(--container-max-width);
+    min-width: var(--container-min-width);
+    margin: var(--container-margin);
+    padding: var(--container-padding);
+    box-sizing: border-box;
+}
+.w100 {
+    width: 100%;
+}
+h1, .h1 {
+    font-size: var(--h1);
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 2rem;
+}
+h2, .h2 {
+    font-size: var(--h2);
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 2rem;
+}
+h2, .h2 a {
+    color: var(--c-main);
+}
+a {
+    color: var(--с-black);
+    transition: 200ms;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--c-main);
+}
+a.--main {
+    color: var(--c-main);
+}
+a.--main:hover {
+    color: var(--c-hover);
+}

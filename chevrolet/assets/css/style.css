@@ -1,0 +1,241 @@
+/*header*/
+
+.header {
+    margin-bottom: 2em;
+}
+.header__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.header__head-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.ya-logo .icon{
+    width: 130px;
+    height: 40px;
+}
+.head__menu {
+    background: var(--bg-main);
+    padding: 1em 0;
+}
+.nav {}
+.nav_link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-right: 2em;
+}
+.nav_link:nth-last-child(1) {
+    margin-right: 0;
+}
+
+/*header*/
+
+/*mob header*/
+
+.header_mobile {
+    display: none;
+}
+.header__mob__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+.header__mob__head-item {}
+.icon_box .icon {
+    --icon-size: 30px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    fill: var(--c-main);
+    stroke: var(--c-main);
+}
+.icon_box .close {
+    stroke: initial;
+}
+.header_mobile--container {
+    --top: 88px;
+    position: absolute;
+    top: var(--top);
+    transform: translateX(-120%);
+    transition: 200ms;
+    opacity: 0;
+    z-index: 5;
+    height: calc(100vh - var(--top));
+    border-top: solid 1px var(--c-gray);
+    background: #fff;
+    width: 100%;
+}
+.nav__mob a{
+    display: block;
+    color: var(--с-black);
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: solid 1px var(--c-gray);
+    margin-right: 0;
+}
+.burger {
+    display: block;
+}
+.close {
+    display: none;
+}
+body.--is-visible .header_mobile--container {
+    opacity: 1;
+    transform: translateX(0);
+}
+body.--is-visible .burger {
+    display: none !important;
+}
+body.--is-visible .close {
+    display: block !important;
+}
+body.--is-visible .burger {
+    display: none !important;
+}
+
+/*mob header*/
+
+
+/*form - основная форма*/
+.form-container {
+    padding: 4em;
+    margin-bottom: 4em;
+}
+.form-container__title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.form-container__sub {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1em;
+    color: var(--с-ligth-gray);
+    margin-bottom: 2em;
+}
+.main-form {}
+.main-form__input {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+.checkbox-item {
+    margin-bottom: 2em;
+}
+.checkbox-item .--main{
+    text-decoration: underline;
+}
+.main-form .button {
+    --padding-left-right: 60px;
+    --padding-top-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/*form - основная форма*/
+
+/*footer*/
+
+.footer {
+    padding: 3em 0;
+}
+.footer-container {}
+.footer-container__head {
+    --padding-b: 2em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--c-gray);
+    padding-bottom: var(--padding-b);
+    margin-bottom: var(--padding-b);
+}
+.footer-container__head-links {
+    display: grid;
+    grid-template-columns: 200px repeat(2, 1fr);
+    gap: 2em;
+    justify-items: start;
+    align-items: center;
+}
+.footer-links {}
+.footer-container__head-contacts {
+    display: flex;
+    justify-self: normal;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 250px;
+}
+.footer-container__head-contacts a {
+    margin-bottom: 1em;
+}
+.footer-contacts {}
+.footer-contacts__item {
+    font-size: 12px;
+    color: var(--c-darkgray);
+}
+.footer-container__footer {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1em;
+    color: var(--c-darkgray);
+}
+/*footer*/
+
+@media (max-width: 1024px) {
+    .footer-container__head {
+        display: block;
+    }
+    .footer-container__head-links {
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 768px) {
+    .header_mobile {
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+    .footer-container__head-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-form__input {
+        display: block;
+    }
+}
+@media (max-width: 425px) {
+    .form-container {
+        padding: 2em;
+    }
+    .main-form .checkbox input {
+        padding: .5em;
+    }
+    .footer-container__head-links {
+        grid-template-columns: 1fr;
+        margin-bottom: 2em;
+    }
+    .footer-container__head-links .button {
+        width: 100%;
+    }
+    .form-container__title {
+        font-size: 25px;
+    }
+    .form-container__sub {
+        font-size: 18px;
+    }
+    .footer-container__head-contacts {
+        display: block;
+        max-width: initial;
+        text-align: center;
+    }
+    .footer-container__head-contacts .logo {
+        margin-bottom: 1em;
+        display: block;
+    }
+}
