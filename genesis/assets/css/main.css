@@ -15,14 +15,14 @@
     --container-max-width: 1300px;
     --container-margin: 0px auto;
     --container-padding: 0 1em;
-    --c-main: #9D0705;
-    --c-hover: #6e0807;
+    --c-main: #a36b4f;
+    --c-hover: rgba(163,107,79,.8);
     --c-gray: #DEDEDC;
     --c-darkgray: #5C5D5E;
     --c-orange: orange;
     --c-ligth-gray: #9BA1A5;
     --c-black: #000;
-    --с-white: #fff;
+    --c-white: #fff;
     --bg-main: #F2F2F2;
     --b-radius: 3px;
     --h1: 35px;
@@ -34,7 +34,7 @@
 .--bg-main {background: var(--bg-main);}
 
 body {
-    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-family: 'Genesis Sans Text', Helvetica, sans-serif;
     font-size: 16px;
 }
 .container {

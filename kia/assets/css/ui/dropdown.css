@@ -1,0 +1,146 @@
+.drop {
+    position: relative;
+    z-index: 1;
+}
+.drop .drop-icon {
+    --ui-color: var(--main);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--ui-color);
+}
+.btn {
+    --border-color: var(--main);
+    --background-color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: var(--background-color);
+    outline: none;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+.drop-btn input {
+    --border-color: var(--main);
+    --background-color: #fff;
+    border: 1px solid var(--border-input);
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: var(--background-color);
+    outline: none;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+.drop .drop-btn {
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.drop. w100 {
+    width: 100%;
+}
+.drop .w100 .drop-btn input {
+    width: 100%;
+}
+.drop .drop-container {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transform: translateY(5px);
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    transition: 200ms;
+    box-sizing: border-box;
+    width: inherit;
+}
+.drop .drop-container::before {
+    content: '';
+    position: absolute;
+    left: 2em;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.drop .drop-content {
+    min-width: 100%;
+    background: #fff;
+    padding: 1.2rem;
+    box-shadow: 0px 4px 20px #0003;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.drop .drop-content .checkbox, .drop .drop-content .radio {
+    --icon-size: 20px;
+    width: 100%;
+}
+.drop .drop-content .checkbox input:before, .drop .drop-content .radio input:before {
+    background-size: 8px;
+}
+.drop .drop-submit {
+    position: fixed;
+    top: calc(100% + 50px);
+    right: 10px;
+    left: 10px;
+    display: none;
+    --padding: 12px;
+    --font-size: 14px;
+}
+a.drop-item {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: var(--black);
+    text-decoration: none;
+    line-height: 1em;
+    box-sizing: border-box;
+    width: max-content;
+}
+a.drop-item:hover {
+   text-decoration: underline;
+}
+
+.drop .drop-item.checkbox input, .drop .drop-item.radio input {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.drop.--open {
+    z-index: 100;
+}
+.drop.--open .drop-container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.drop.--open .drop-icon {
+    transform: translateY(-50%) rotate(180deg) !important;
+}
+.drop-title {
+    display: flex;
+}
+.drop-title a.drop-item {
+    font-size: calc(1em / 2);
+}
+.drop-title .drop .drop-icon {
+    right: -2rem;
+    fill: var(--main);
+}
+.drop-title .filter-drop {
+    color: var(--main);
+    margin-left: 8px;
+    font-weight: 300;
+}

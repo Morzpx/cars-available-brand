@@ -50,8 +50,8 @@
     font-size: var(--font-size);
     margin: 0 calc(var(--margin-inner) / 2.5);
 }
-.--c-white {
-    fill: var(--c-white);
+.--с-white {
+    fill: var(--с-white);
 }
 .transparent {
     background: transparent;
@@ -61,7 +61,7 @@
 .transparent:hover {
     --ui-color: var(--c-main);
     background: var(--ui-color);
-    color: var(--c-white);
+    color: var(--с-white);
 }
 .transparent:active {
     box-shadow: inset 0 0 3px 2px #00000020;
@@ -80,10 +80,10 @@
 .grid span {
     margin: 0;
     padding: var(--padding-top-bottom) var(--padding-left-right);
-    border-right: solid 1px var(--c-white);
+    border-right: solid 1px var(--с-white);
 }
 .grid .icon {
-    --background-color: var(--c-white);
+    --background-color: var(--с-white);
     fill: var(--background-color);
     width: var( --icon-size);
     height: var( --icon-size);
@@ -97,12 +97,12 @@
     position: relative;
     overflow: hidden;
     transition: 300ms;
-    background: var(--c-white);
+    background: var(--с-white);
     color: var(--ui-color);
 }
 .hovered-t:hover {
     --ui-color: var(--c-main);
-    background: var(--c-white);
+    background: var(--с-white);
     color: var(--ui-color);
     border: solid 1px var(--ui-color);
 }
@@ -142,14 +142,14 @@
     border: solid 1px var(--c-main);
 }
 .question .icon {
-    fill: var(--c-white);
+    fill: var(--с-white);
     width: var(--icon-size);
     height: var(--icon-size);
 }
 /*.btn {
     --ui-color: var(--c-main);
     --border-color: var(--ui-color);
-    color: var(--c-white);
+    color: var(--с-white);
     border: 1px solid var(--border-color);
     background: var(--ui-color);
     padding: 19px 40px 18px;

@@ -89,7 +89,7 @@
     height: var( --icon-size);
 }
 .grid:hover .icon {
-    fill: var(--с-black);
+    fill: var(--c-black);
 }
 
 .hovered-t {
@@ -172,8 +172,8 @@
     text-decoration: none;
     display: inline-flex;
     cursor: pointer;
-    color: var(--с-black);
-    border: 2px solid var(--с-black);
+    color: var(--c-black);
+    border: 2px solid var(--c-black);
     transition: 200ms;
     padding: 6px 10px;
     gap: 5px;
@@ -186,7 +186,7 @@
 .btn__transparent svg {
     width: 15px;
     height: 15px;
-    stroke: var(--с-black);
+    stroke: var(--c-black);
     display: block;
     fill: none;
     transition: 200ms;
@@ -200,7 +200,7 @@
 }
 .btn_icon svg {
     stroke: inherit;
-    fill: var(--с-black);
+    fill: var(--c-black);
 }
 .btn__h {
     padding: 15px 25px;
