@@ -15,8 +15,8 @@
     --container-max-width: 1300px;
     --container-margin: 0px auto;
     --container-padding: 0 1em;
-    --c-main: #9D0705;
-    --c-hover: #6e0807;
+    --c-main: #FF0000;
+    --c-hover: #c30303;
     --c-gray: #DEDEDC;
     --c-darkgray: #5C5D5E;
     --c-orange: orange;
@@ -34,7 +34,7 @@
 .--bg-main {background: var(--bg-main);}
 
 body {
-    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-family: 'MMC', Helvetica, sans-serif;
     font-size: 16px;
 }
 .container {
