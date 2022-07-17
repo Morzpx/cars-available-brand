@@ -15,28 +15,27 @@
     --container-max-width: 1300px;
     --container-margin: 0px auto;
     --container-padding: 0 1em;
-    --c-main: #000;
-    --c-hover: #424141;
+    --c-main: #00A3E0;
+    --c-hover: #0085b7;
     --c-gray: #DEDEDC;
     --c-darkgray: #5C5D5E;
     --c-orange: orange;
     --c-ligth-gray: #9BA1A5;
     --c-black: #000;
     --c-white: #fff;
-    --c-opel: #FFFF44;
     --bg-main: #F2F2F2;
     --b-radius: 3px;
-    --h1: 35px;
-    --h2: 25px;
-    --h3: 20px;
-    --h4: 17px;
+    --h1: 25px;
+    --h2: 18px;
+    --h3: 15px;
+    --h4: 12px;
 }
 .--b-radius {border-radius: var(--b-radius)}
 .--bg-main {background: var(--bg-main);}
 
 body {
-    font-family: 'Opel Next', Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Peugeot New Cyrillic Beta1', Helvetica, sans-serif;
+    font-size: 13px;
 }
 .container {
     max-width: var(--container-max-width);
@@ -61,7 +60,11 @@ h2, .h2 {
     margin-bottom: 2rem;
 }
 h2, .h2 a {
-    color: var(--c-black);
+    color: var(--c-main);
+}
+p {
+    margin-bottom: 0.5em;
+    line-height: 1em;
 }
 a {
     color: var(--с-black);
@@ -69,10 +72,10 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: var(--c-hover);
+    color: var(--c-main);
 }
 a.--main {
-    color: var(--c-black);
+    color: var(--c-main);
 }
 a.--main:hover {
     color: var(--c-hover);
@@ -89,7 +92,7 @@ a.--main:hover {
 }
 .remodal:after {
     content: '';
-    background-color: var(--c-hover);
+    background-color: var(--c-main);
     border-radius: 50%;
     width: 300px;
     height: 250px;

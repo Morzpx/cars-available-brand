@@ -84,6 +84,7 @@ a.--main:hover {
     background: #fff !important;
     overflow: hidden;
     text-align: initial;
+    margin-bottom: -1px;
 }
 .remodal:after {
     content: '';

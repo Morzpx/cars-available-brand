@@ -15,15 +15,15 @@
     --container-max-width: 1300px;
     --container-margin: 0px auto;
     --container-padding: 0 1em;
-    --c-main: #000;
-    --c-hover: #424141;
-    --c-gray: #DEDEDC;
+    --c-main: #00368F;
+    --c-main-other: #003145;
+    --c-hover: #de0039;
+    --c-gray: #A3A3A3;
     --c-darkgray: #5C5D5E;
     --c-orange: orange;
     --c-ligth-gray: #9BA1A5;
     --c-black: #000;
     --c-white: #fff;
-    --c-opel: #FFFF44;
     --bg-main: #F2F2F2;
     --b-radius: 3px;
     --h1: 35px;
@@ -35,7 +35,7 @@
 .--bg-main {background: var(--bg-main);}
 
 body {
-    font-family: 'Opel Next', Helvetica, sans-serif;
+    font-family: 'SuzukiPRORegular', Helvetica, sans-serif;
     font-size: 16px;
 }
 .container {
@@ -61,7 +61,7 @@ h2, .h2 {
     margin-bottom: 2rem;
 }
 h2, .h2 a {
-    color: var(--c-black);
+    color: var(--c-main);
 }
 a {
     color: var(--с-black);
@@ -69,10 +69,10 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: var(--c-hover);
+    color: var(--c-main);
 }
 a.--main {
-    color: var(--c-black);
+    color: var(--c-main);
 }
 a.--main:hover {
     color: var(--c-hover);
@@ -89,7 +89,7 @@ a.--main:hover {
 }
 .remodal:after {
     content: '';
-    background-color: var(--c-hover);
+    background-color: var(--c-main);
     border-radius: 50%;
     width: 300px;
     height: 250px;

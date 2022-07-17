@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'SuzukiPROHeadline';
+    src: url('SuzukiPROHeadline.woff2') format('woff2'),
+    url('SuzukiPROHeadline.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SuzukiPRORegular';
+    src: url('SuzukiPRORegular.woff2') format('woff2'),
+        url('SuzukiPRORegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SuzukiPROBold';
+    src: url('SuzukiPROBold.woff2') format('woff2'),
+        url('SuzukiPROBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,416 @@
+/*header*/
+
+.header {
+    margin-bottom: 2em;
+}
+.header__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.header__head-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.head_text {
+    border-right: solid 2px var(--c-gray);
+    padding-right: 2em;
+}
+.ya-logo .icon{
+    width: 130px;
+    height: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logo span:nth-child(1) {
+    padding-right: 1em;
+}
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+.YA {
+    font-family: 'SuzukiPROHeadline', Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    color: var(--c-main-other);
+}
+.YA-sub{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1em;
+    color: var(--c-gray);
+}
+.phone {
+    text-align: right;
+}
+.phone .number {
+    font-family: 'SuzukiPROHeadline', Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    color: var(--c-main);
+}
+.phone .text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1em;
+    color: var(--c-gray);
+}
+.logo .icon {
+    width: 130px;
+    height: 50px;
+    fill: var(--c-main);
+}
+.footer-container__contacts .logo {
+    margin-bottom: 1em;
+}
+.footer-container__contacts .logo .icon {
+    fill: var(--c-white);
+}
+.footer-container__contacts .logo span:hover {
+    color: var(--c-white);
+}
+.head__menu {
+    padding: .5em 0;
+    border-top: solid 1px var(--c-gray);
+    box-shadow: 0px 10px 20px 0px #a3a3a373;
+}
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_container-item .button{
+    --padding-top-bottom: 10px;
+}
+.nav_container .nav_link {
+    font-family: 'SuzukiPROHeadline', Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--c-main-other);
+}
+.nav_container .nav_link:hover {
+    color: var(--c-hover);
+}
+.nav {
+
+}
+.nav_link {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1em;
+    margin-right: 2em;
+}
+.nav_link:nth-last-child(1) {
+    margin-right: 0;
+}
+
+/*header*/
+
+/*mob header*/
+
+.header_mobile {
+    display: none;
+}
+.header__mob__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+.header__mob__head-item {}
+.icon_box .icon {
+    --icon-size: 30px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    fill: var(--c-main);
+    stroke: var(--c-main);
+}
+.icon_box .close {
+    stroke: initial;
+}
+.header_mobile--container {
+    --top: 86px;
+    position: absolute;
+    top: var(--top);
+    transform: translateX(-120%);
+    transition: 200ms;
+    opacity: 0;
+    z-index: 5;
+    height: calc(100vh - var(--top));
+    border-top: solid 1px var(--c-gray);
+    background: #fff;
+    width: 100%;
+}
+.nav__mob a{
+    display: block;
+    color: var(--c-black);
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: solid 1px var(--c-gray);
+    margin-right: 0;
+}
+.burger {
+    display: block;
+}
+.close {
+    display: none;
+}
+body.--is-visible .header_mobile--container {
+    opacity: 1;
+    transform: translateX(0);
+}
+body.--is-visible .burger {
+    display: none !important;
+}
+body.--is-visible .close {
+    display: block !important;
+}
+body.--is-visible .burger {
+    display: none !important;
+}
+
+/*mob header*/
+
+
+/*form - основная форма*/
+.form-container {
+    padding: 4em;
+    margin-bottom: 4em;
+}
+.form-container__title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+.form-container__sub {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1em;
+    color: var(--с-ligth-gray);
+    margin-bottom: 2em;
+}
+.main-form {}
+.main-form__input {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+.checkbox-item {
+    margin-bottom: 2em;
+}
+.checkbox-item .--main{
+    text-decoration: underline;
+}
+.main-form .button {
+    --padding-left-right: 60px;
+    --padding-top-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/*form - основная форма*/
+
+/*footer*/
+
+.footer {
+    padding: 3em 0;
+}
+.footer-container {}
+.footer-container__head {
+    --padding-b: 2em;
+    display: block;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--c-gray);
+    padding-bottom: var(--padding-b);
+    margin-bottom: var(--padding-b);
+}
+.footer-container__head-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+    justify-items: start;
+    align-items: start;
+}
+.footer-container__title {
+    font-family: 'SuzukiPROHeadline', Helvetica, sans-serif;
+    color: var(--c-main-other);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+.footer-container__link a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+.footer-container__head-link {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    padding: 1em 0;
+}
+.footer-container__head-link a {
+    font-family: 'SuzukiPROBold', Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--c-black);
+}
+.footer-links {
+    color: var(--c-white);
+}
+.footer-container__head-contacts {
+    display: flex;
+    justify-self: normal;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 250px;
+}
+.footer-container__head-contacts a {
+    margin-bottom: 1em;
+}
+.footer-contacts {}
+.footer-contacts__item {
+    font-size: 12px;
+    color: var(--c-darkgray);
+}
+.footer-container__contacts {
+}
+.footer__contacts-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+.footer__contacts-address {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+.footer__contacts-phone {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+/*.footer-container__contacts .button {
+    --padding-top-bottom: 15px;
+    --border-color: var(--c-white);
+    color: var(--c-white);
+    background: transparent;
+    margin-bottom: 1em;
+}
+.footer-container__contacts .button:hover {
+    --ui-color: var(--c-white);
+}
+.footer-container__contacts .hovered-t::before{
+    background-color: var(--c-white);
+}*/
+.footer__contacts-phone .icon{
+    fill: var(--c-white);
+    width: 15px;
+    height: 15px;
+}
+.footer-container__footer {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+/*footer*/
+
+/*remodal*/
+
+.modal-container {}
+.modal-container .title {}
+.modal-container .sub {
+    margin-bottom: 2em;
+}
+.modal-form {}
+.modal-form .button {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.modal-form__item {
+    margin-bottom: 1em;
+}
+.modal-form__item input {
+    padding: 15px 15px;
+}
+.modal-form__item .checkbox input {
+    padding: .5em;
+}
+.modal-form__item .input_title {}
+.modal-form__item .input_title sup {
+    color: var(--c-main);
+}
+/*remodal*/
+
+@media (max-width: 1024px) {
+    .footer-container__head {
+        display: block;
+    }
+    .footer-container__head-links {
+        margin-bottom: 1em;
+    }
+    .header_mobile {
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .footer-container__head-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-form__input {
+        display: block;
+    }
+    .form-container__title {
+        font-size: 25px;
+    }
+    .form-container__sub {
+        font-size: 18px;
+    }
+}
+@media (max-width: 425px) {
+    .form-container {
+        padding: 2em;
+    }
+    .main-form .checkbox input {
+        padding: .5em;
+    }
+    .footer-container__head-links {
+        grid-template-columns: 1fr;
+        margin-bottom: 2em;
+    }
+    .footer-container__head-links .button {
+        width: 100%;
+    }
+    .footer-container__head-contacts {
+        display: block;
+        max-width: initial;
+        text-align: center;
+    }
+    .footer-container__head-contacts .logo {
+        margin-bottom: 1em;
+        display: block;
+    }
+}
