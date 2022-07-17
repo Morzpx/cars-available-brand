@@ -3,7 +3,7 @@
     position: relative;
 }
 .input input {
-    --background-color: var(--с-white);
+    --background-color: var(--c-white);
     width: 100%;
     margin: 10px 0;
     outline: none;
@@ -34,7 +34,7 @@
 }
 textarea {
     font-family: 'Roboto', Helvetica, sans-serif;
-    --background-color: var(--с-white);
+    --background-color: var(--c-white);
     width: 100%;
     margin: 10px 0;
     outline: none;
