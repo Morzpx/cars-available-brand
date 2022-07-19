@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'VW Text';
+    src: url('VWText-BoldItalic.woff2') format('woff2'),
+        url('VWText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('VWHead-BoldItalic.woff2') format('woff2'),
+        url('VWHead-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('VWHead-ExtraBold.woff2') format('woff2'),
+        url('VWHead-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('VWHead.woff2') format('woff2'),
+        url('VWHead.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('VWHead-Light.woff2') format('woff2'),
+        url('VWHead-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('VWHead-Bold.woff2') format('woff2'),
+        url('VWHead-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Text';
+    src: url('VWText.woff2') format('woff2'),
+        url('VWText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Text';
+    src: url('VWText-Bold.woff2') format('woff2'),
+        url('VWText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('VWHead-Italic.woff2') format('woff2'),
+        url('VWHead-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Text';
+    src: url('VWText-Italic.woff2') format('woff2'),
+        url('VWText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VW Text';
+    src: url('VWText-Light.woff2') format('woff2'),
+        url('VWText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

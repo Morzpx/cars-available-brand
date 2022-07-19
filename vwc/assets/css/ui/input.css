@@ -1,0 +1,80 @@
+.input {
+    --size: 1em;
+    position: relative;
+}
+.input input {
+    --background-color: var(--c-white);
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    border: solid 1px var(--c-ligth-gray);
+    padding: 20px 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: var(--background-color);
+    outline: none;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+.input input::placeholder {
+    color: #000;
+}
+.input input:focus-visible {
+    border: solid 1px var(--c-main);
+}
+.input .icon {
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--c-main);
+}
+textarea {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    --background-color: var(--c-white);
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    border: solid 1px var(--c-ligth-gray);
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: var(--background-color);
+    outline: none;
+    color: var(--c-gray);
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+    min-height: 85px;
+    resize: none;
+}
+textarea:focus-visible {
+    border: solid 1px var(--c-main);
+}
+textarea::placeholder {
+    color: var(--c-gray);
+}
+.input select {
+    --background-color: var(--c-white);
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    border: solid 1px var(--c-ligth-gray);
+    padding: 20px 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: var(--background-color);
+    outline: none;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+.input select::placeholder {
+    color: var(--c-ligth-gray);
+}
+.input select:focus-visible {
+    border: solid 1px var(--c-main);
+}

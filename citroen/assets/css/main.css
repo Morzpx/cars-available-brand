@@ -108,6 +108,44 @@ a.--main:hover {
     left: unset;
     right: 0;
 }
+p {
+    margin-bottom: 1em;
+}
+.remodal-legal {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    transition: initial;
+    border-radius: 0;
+}
+.remodal-legal .h2{
+    font-weight: 600;
+}
+.remodal-legal a {
+    color: var(--c-main);
+}
+.remodal-legal:after {
+    all: revert;
+}
+.remodal-legal::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.remodal-legal::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--c-main);
+    width: 50px;
+}
+
+.remodal-legal::-webkit-scrollbar-track {
+    /*    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.2);*/
+    border-radius: 5px;
+    background-color: transparent;
+}
 @media only screen and (min-width: 641px) {
     .remodal {
         max-width: 600px;
@@ -122,5 +160,11 @@ a.--main:hover {
         max-width: 930px;
     }
 }
+@media (max-width: 500px) {
+    .remodal-legal {
+        width: 100%;
+    }
+}
+
 
 /*remodal*/
